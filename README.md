@@ -2,9 +2,11 @@
 
 ### [Project Description](doc/project2_desc.md)
 
-![screenshot](doc/screenshot2.png)
+![screenshot](doc/figs/background.jpg)
 
-In this second project of GR5243 Applied Data Science, we develop a version 2.0 of an *Exploratory Data Analysis and Visualization* shiny app on a topic of your choice using [NYC Open Data](https://opendata.cityofnewyork.us/) or U.S. government open data released on the [data.gov](https://data.gov/) website. See [Project 2 Description](doc/project2_desc.md) for more details.  
+- Term: Fall 2018
+- Team #8
+
 
 The **learning goals** for this project is:
 
@@ -21,14 +23,33 @@ The **learning goals** for this project is:
 Term: Fall 2018
 
 + Team #
-+ **Projec title**: + Team members
-	+ team member 1: Li, Peilin pl2672@columbia.edu (Designated Presenter)
-	+ team member 2: Rong, Chuqiao cr2945@columbia.edu
-	+ team member 3: Sun, Qiaqia qs2184@columbia.edu
-	+ team member 4: Xie, Yiding yx2443@columbia.edu
-	+ team member 5: Yin, Yiqiao yy2502@columbia.edu
++ **Projec title**: + Team members (Alphabetical ordering of family name)
+	+ team member 1: Lakehal, Yadir yl3435@columbia.edu
+	+ team member 2: Li, Peilin pl2672@columbia.edu (Designated Presenter)
+	+ team member 3: Rong, Chuqiao cr2945@columbia.edu
+	+ team member 4: Sun, Qiaqia qs2184@columbia.edu
+	+ team member 5: Xie, Yiding yx2443@columbia.edu
+	+ team member 6: Yin, Yiqiao yy2502@columbia.edu
+	
 
-+ **Project summary**: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
++ **Background**: More and more international students are choosing to study in America today. It is reported that more than 2,000,000 international students studied at U.S. colleges and universities in 2016 to 2018. However, the college search process is often a huge feat with all the information available everywhere in today's digital age. It is hard to sieve through all the information overload, to collect various statistics, and to collate and compare them with ease. Exact details are hard to come by easily and there is often too much inertia to sieve through thousands and thousands of datasets. In order to help students out with these issues, our team have developed an application called the Uni-Mate. This applications hopes to enable international students to discover and compare schools in an more efficient manner. It provides the user with a simplified platform to filter and rank universities based on their own preferences, and output an interactive map & various density plots that would allow them to view and compare selected statistics of the various universities.
+
+In a nutshell, our overall philosophy behind the creation of this application is to provide an alternative, more lighthearted and personalized platform to simplify the college decision making process for college applicants, and make it easier to obtain information amongst the sea of madness. In details, we want to emphasize the potential reasonale behind the competitive environment of getting admitted by Ivy League universities.
+
++ **Project summary**: This project explores and visualizes 272 universities in America by using the data on ([College Scorecard Database](https://collegescorecard.ed.gov/data/documentation/)), ([2016 Forbes Ranking](data/ranking_forbes_2016.csv)), ([HappyScore Data](data/Happinessdata.csv)) and ([Crime Data](data/CrimeData_final.csv)). We created a Shiny App to help users discover and compare universities. 
+
++ Filter & Rank——easily discover and compare the universities that meet user's requirements
+
+Two filter parts. One part is the basic filter: the user can choose universities based on "Major", "Type of School" and "Type of City". The other part is the advanced filter: they can give their weights to "Academic Performance", "Average Cost", "Earning & Jobs", "Social Security" and "Life Quality", based on how important they think these factors matter to them. 
+
+Two ranking options. One option is based on the Forbes University Rankings. The other one is using the weights the user gave to calculate the rank of these universities - ultimately producing a personalized ranking. 
+
++ Map & Plot——visualization of relevant features of the universities 
+
+Map: Every university that meet the user's requirments will show on the map. After clicking on the university, both the URL and Forbes rank of the school will be in view.
+
+Plots: There will be four interacitve density plots based on the filtered data. These will show the average of "Admission Rate", "Average Cost", "Crime Rate" and "Earnings" of the selected(filtered) universities.
+.
 
 + **Contribution statement**: ([default](doc/a_note_on_contributions.md)) All team members contributed equally in all stages of this project. All team members approve our work presented in this GitHub repository including this contributions statement. 
 
