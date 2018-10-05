@@ -2,7 +2,7 @@
 
 ### [Project Description](doc/project2_desc.md)
 
-![screenshot](doc/figs/background.jpg)
+![screenshot](doc/figs/Columbia_Background.jpg)
 
 - Term: Fall 2018
 - Team #8
