@@ -8,3 +8,4 @@ The data directory contains data used in the analysis. This is treated as read o
 
 - We left some old files from previous group in this folder so that in the future we can come back and check them when necessary.
 - We also uploaded our new files, final3data.csv, final4data_crimedata.csv, final5data_ACT Enrollment Crime Deadline_Oct5th.csv, and history.RData.
+- The files (specifically data) in this folder are 
