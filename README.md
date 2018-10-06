@@ -23,7 +23,7 @@ The **learning goals** for this project is:
 ## Project Title: Virtual College Fair
 Term: Fall 2018
 
-+ Team #
++ Team #8
 + **Projec title**: + Team members (Alphabetical ordering of family name)
 	+ team member 1: Lakehal, Yadir yl3435@columbia.edu
 	+ team member 2: Li, Peilin pl2672@columbia.edu (Designated Presenter)
