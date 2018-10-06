@@ -9,7 +9,9 @@ The doc directory contains the report or presentation files. It can have subfold
 In the subfolder, figs, we uploaded screen shots. These pictures are for illustration purpose only for the ReadMe file in the first page of Github repo. 
 
 They are also presented here. The front page of our app looks like the following. 
+
 ![screenshot](doc/figs/screenshot1.PNG)
 
 The main data presentation page of our app looks like the following.
+
 ![screenshot](doc/figs/screenshot2.PNG)
