@@ -11,3 +11,5 @@ In the subfolder, figs, we uploaded screen shots. These pictures are for illustr
 They are also presented here. The front page of our app looks like the following. 
 ![screenshot](doc/figs/screenshot1.PNG)
 
+The main data presentation page of our app looks like the following.
+![screenshot](doc/figs/screenshot2.PNG)
