@@ -1,4 +1,4 @@
-### A Note on Contributions
+### Contribution Statement
 
 ---
 Project README statement.
