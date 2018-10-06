@@ -48,7 +48,7 @@ Plots: There will be multiple interacitve density plots based on the filtered da
 
 ![screenshot](doc/figs/screenshot2.PNG)
 
-+ **Contribution statement**: ([default](doc/project_readme_on_contributions.md)) 
++ **Contribution statement**: (Please also see [Contribution Statement](doc/contribution_statement.md)) 
 
 All team members contributed equally in all stages of this project. All team members approve our work presented in this GitHub repository including this contributions statement. 
 
