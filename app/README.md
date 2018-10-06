@@ -5,4 +5,5 @@ The App directory contains the app files for the Shiny App (i.e., ui.r and serve
 
 - The app consists of ui and server. Both are uploaded in the folder.
 - The app folder also has data set uploaded as well.
+- The app uses final3data as the final data set input for ui and server. 
 - We, Group 8, together have approved the design of this app.
