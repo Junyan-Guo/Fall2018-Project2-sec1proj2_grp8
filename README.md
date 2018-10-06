@@ -20,7 +20,7 @@ Term: Fall 2018
 	+ team member 6: Yin, Yiqiao yy2502@columbia.edu
 	
 
-### Link: https://y-yin.shinyapps.io/Virtual-College-Fair/
+### Shiny App Link: https://y-yin.shinyapps.io/Virtual-College-Fair/
 
 + **Background**: 
 
