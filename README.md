@@ -7,19 +7,6 @@
 - Term: Fall 2018
 - Team: Group #8
 
-
-The **learning goals** for this project is:
-
-- business intelligence for data science
-- study legacy codes and further development
-- data cleaning
-- data visualization
-- systems development/design life cycle
-- shiny app/shiny server
-- provide high school students a virtual online college/university screening platform
-
-*The above general statement about project 2 can be removed once you are finished with your project. It is optional.
-
 ## Project Title: Virtual College Fair
 Term: Fall 2018
 
