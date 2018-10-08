@@ -28,7 +28,7 @@ library(shinythemes)
 ############################ DATA ##################################
 
 #load("history.RData")
-schdata <- read.csv("final3data.csv")
+schdata <- read.csv("final3data.csv", stringsAsFactors = F)
 schdata$IvyIndicator <- ifelse(
   schdata$Name == "Brown University", "Yes",
   ifelse(
@@ -158,6 +158,8 @@ shinyServer(function(input, output){
     w5<-input$HappyRank
     final2dat<-data %>%
       select(Name,Earn, ADMrate,Rank,AvgCost,CrimeRate,HappyRank, State, SAT, Enrollment, Deadline)%>%
+      mutate(Enrollment = as.numeric(Enrollment))%>%
+      mutate(Deadline = as.Date(Deadline, "%m/%d/%y"))%>%
       arrange(Earn,Rank)%>%
       mutate(Earn1=seq(1:nrow(data)))%>%
       arrange(AvgCost,Rank)%>%
@@ -168,6 +170,7 @@ shinyServer(function(input, output){
       mutate(HappyRank1=seq(1:nrow(data))) %>%
       mutate(new_rank=w1*Earn1+ w2*Rank+w3*AvgCost1+w4*CrimeRate1+w5*HappyRank1) %>%
       arrange(new_rank)
+    colnames(final2dat)[2] <- "Earnings"
     final2dat[,c(4,1,8, 3, 9, 5,10,11, 2, 6,7)]
   },options = list(orderClasses = TRUE, autoWidth = TRUE,
                    columnDefs = list(list(width = '175px', targets = c(1)), list(width = '25px', targets = c(0,2)))))
@@ -251,26 +254,26 @@ shinyServer(function(input, output){
   
   output$explain2<- renderText({"
     (2) Choose your desired major, school size, type of school, and location. 
-If you don't have strong preferences, choose the default option *All*.
+    If you don't have strong preferences, choose the default option *All*.
     "})
   
   output$explain3<- renderText({"
     (3) Select your budget.
     "})
-
+  
   output$explain4<- renderText({"
     (4) Use the slider bars available to rate how highly you value 
-variables such as  performance, cost, safety and life quality.
+    variables such as  performance, cost, safety and life quality.
     "})
-
+  
   output$explain5<- renderText({"
     (5) Click on: *Find my dream college* and make your dreams come true!
     "})
   
   output$explain6 <- renderText({"
     This will display a map of the colleges that best fit your criteria, 
-including pop up windows and tabs that will give you all the data you 
-want on your preferred list of colleges!
+    including pop up windows and tabs that will give you all the data you 
+    want on your preferred list of colleges!
     "})
   
   # Dictionary here
@@ -279,7 +282,7 @@ want on your preferred list of colleges!
   output$dictonary1 <- renderText({"
     Rank: Forbes Ranking
     "})
-
+  
   
   #output$text1<- renderText({"Please rate how highly you value the following:"})
   
@@ -293,7 +296,7 @@ want on your preferred list of colleges!
     Fair, an app dedicated to high schoolers who want to do their college 
     research in an effective and seamless way. 
     "})
-
+  
   output$introduction1<- renderText({"
     - Chuqiao Rong
     "})

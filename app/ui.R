@@ -65,11 +65,11 @@ schdata$Coast <- ifelse(
 shinyUI(dashboardPage(
   dashboardHeader(
     title='Virtual College Fair',
-    titleWidth = 350),
+    titleWidth = 325),
   #skin = "red",
   #shinythemes::themeSelector(),  # <--- Add this somewhere in the UI
   dashboardSidebar(
-    width = 350,
+    width = 325,
     sidebarMenu(id='sidebarmenu',
                 menuItem("The College Fair",tabName="Overview",icon=icon("book")),
                 menuItem("About Us", tabName="Intro", icon=icon("group")),
@@ -96,7 +96,7 @@ shinyUI(dashboardPage(
       selectInput("citytype", label = "City Type",
                   choices = c("All", "City", "Rural", "Suburb","Town"), selected = "All"),
       sliderInput("budget", label="Max Budget",
-                  min = 7000, max = 90000, value = 70000, step = 100)
+                  min = 7000, max = 90000, value = 90000, step = 200)
     ),
     #actionButton("resetAll", "Reset all"),
     hr(),
@@ -120,57 +120,57 @@ shinyUI(dashboardPage(
                    Try out The College Fair, find your best-fit college and make all your dreams come true!
                    "),
                 imageOutput(outputId = "background", height = "800px", width = "1800px")
-              )),
+                )),
       
       tabItem(tabName = "Manual",
               mainPanel(
                 h3("Please read the following."),
                 textOutput("explain1"),
                 tags$head(tags$style("#explain1{
-                                 color: black;
-                                 font-size: 20px;
-                                 font-style: bold;
-                                 }"
+                                     color: black;
+                                     font-size: 20px;
+                                     font-style: bold;
+                                     }"
                 )),
                 #hr(),
                 textOutput("explain2"),
                 tags$head(tags$style("#explain2{
-                                 color: black;
-                                 font-size: 20px;
-                                 font-style: bold;
-                                 }"
+                                     color: black;
+                                     font-size: 20px;
+                                     font-style: bold;
+                                     }"
                 )),
                 #hr(),
                 textOutput("explain3"),
                 tags$head(tags$style("#explain3{
-                                 color: black;
-                                 font-size: 20px;
-                                 font-style: bold;
-                                 }"
+                                     color: black;
+                                     font-size: 20px;
+                                     font-style: bold;
+                                     }"
                 )),
                 #hr(),
                 textOutput("explain4"),
                 tags$head(tags$style("#explain4{
-                                 color: black;
-                                 font-size: 20px;
-                                 font-style: bold;
-                                 }"
+                                     color: black;
+                                     font-size: 20px;
+                                     font-style: bold;
+                                     }"
                 )),
                 #hr(),
                 textOutput("explain5"),
                 tags$head(tags$style("#explain5{
-                                 color: black;
-                                 font-size: 20px;
-                                 font-style: bold;
-                                 }"
+                                     color: black;
+                                     font-size: 20px;
+                                     font-style: bold;
+                                     }"
                 )),
                 #hr(),
                 textOutput("explain6"),
                 tags$head(tags$style("#explain6{
-                                 color: black;
-                                 font-size: 20px;
-                                 font-style: bold;
-                                 }"
+                                     color: black;
+                                     font-size: 20px;
+                                     font-style: bold;
+                                     }"
                 )),
                 #hr(),
                 # Dictionary here
@@ -204,52 +204,52 @@ shinyUI(dashboardPage(
               mainPanel(
                 textOutput("introduction"),
                 tags$head(tags$style("#introduction{
-                                 color: black;
-                                 font-size: 20px;
-                                 font-style: bold;
-                                 }"
+                                     color: black;
+                                     font-size: 20px;
+                                     font-style: bold;
+                                     }"
                 )),
                 textOutput("introduction1"),
                 tags$head(tags$style("#introduction1{
-                                 color: black;
-                                 font-size: 20px;
-                                 font-style: bold;
-                                 }"
+                                     color: black;
+                                     font-size: 20px;
+                                     font-style: bold;
+                                     }"
                 )),
                 textOutput("introduction2"),
                 tags$head(tags$style("#introduction2{
-                                 color: black;
-                                 font-size: 20px;
-                                 font-style: bold;
-                                 }"
+                                     color: black;
+                                     font-size: 20px;
+                                     font-style: bold;
+                                     }"
                 )),
                 textOutput("introduction3"),
                 tags$head(tags$style("#introduction3{
-                                 color: black;
+                                     color: black;
                                      font-size: 20px;
                                      font-style: bold;
                                      }"
                 )),
                 textOutput("introduction4"),
                 tags$head(tags$style("#introduction4{
-                                 color: black;
-                                 font-size: 20px;
-                                 font-style: bold;
-                                 }"
+                                     color: black;
+                                     font-size: 20px;
+                                     font-style: bold;
+                                     }"
                 )),
                 textOutput("introduction5"),
                 tags$head(tags$style("#introduction5{
-                                 color: black;
-                                 font-size: 20px;
-                                 font-style: bold;
-                                 }"
+                                     color: black;
+                                     font-size: 20px;
+                                     font-style: bold;
+                                     }"
                 )),
                 textOutput("introduction6"),
                 tags$head(tags$style("#introduction6{
-                                 color: black;
-                                 font-size: 20px;
-                                 font-style: bold;
-                                 }"
+                                     color: black;
+                                     font-size: 20px;
+                                     font-style: bold;
+                                     }"
                 ))
               )),
       
