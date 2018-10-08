@@ -258,7 +258,7 @@ shinyServer(function(input, output){
     "})
   
   output$explain3<- renderText({"
-    (3) Select your budget.
+    (3) Select your budget. Note the default value is $55k in USD, which means this filter only displays schools with costs below this number.
     "})
   
   output$explain4<- renderText({"

@@ -96,7 +96,7 @@ shinyUI(dashboardPage(
       selectInput("citytype", label = "City Type",
                   choices = c("All", "City", "Rural", "Suburb","Town"), selected = "All"),
       sliderInput("budget", label="Max Budget",
-                  min = 7000, max = 90000, value = 90000, step = 200)
+                  min = 7000, max = 75000, value = 55000, step = 200)
     ),
     #actionButton("resetAll", "Reset all"),
     hr(),
