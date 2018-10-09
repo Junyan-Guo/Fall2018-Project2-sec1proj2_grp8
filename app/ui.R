@@ -71,7 +71,7 @@ shinyUI(dashboardPage(
   dashboardSidebar(
     width = 325,
     sidebarMenu(id='sidebarmenu',
-                menuItem("The College Fair",tabName="Overview",icon=icon("book")),
+                menuItem("Virtual College Fair",tabName="Overview",icon=icon("book")),
                 menuItem("About Us", tabName="Intro", icon=icon("group")),
                 menuItem("User Manual",tabName="Manual",icon=icon("question-circle")),
                 menuItem("Search",tabName="University-Search",icon=icon("search"))
@@ -96,7 +96,7 @@ shinyUI(dashboardPage(
       selectInput("citytype", label = "City Type",
                   choices = c("All", "City", "Rural", "Suburb","Town"), selected = "All"),
       sliderInput("budget", label="Max Budget",
-                  min = 7000, max = 75000, value = 55000, step = 200)
+                  min = 7000, max = 90000, value = 90000, step = 200)
     ),
     #actionButton("resetAll", "Reset all"),
     hr(),
@@ -264,7 +264,8 @@ shinyUI(dashboardPage(
                        tabPanel(title="Earnings",width=12,plotlyOutput("earnchart")),
                        tabPanel(title="Crime Rate",plotlyOutput("crimer")),
                        tabPanel(title="Happy Score",plotlyOutput("happy_score")),
-                       tabPanel(title="Enrollment",plotlyOutput("Enrollment"))
+                       tabPanel(title="Enrollment",plotlyOutput("Enrollment")),
+                       tabPanel(title="Slider",parcoordsOutput( "parcoords", width = "900px", height = "700px" ))
                 ),
                 tabBox(width = 12,
                        #tabPanel('Ranking',

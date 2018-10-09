@@ -17,6 +17,7 @@ library(leaflet)
 library(shinydashboard)
 library(imager)
 library(shinythemes)
+library(parcoords)
 
 ########################### RUN APP ##############################
 
@@ -144,10 +145,27 @@ shinyServer(function(input, output){
       v3<- filter(v2.budget(), Citytype==ct()) 
     }})   
   
+  
+
   output$tablerank = renderDataTable({
     final1dat<-v3()
     final1dat[,c(3,4,2,10,13,14,27,28, 29,30,31,33)]
   },options = list(orderClasses = TRUE))
+  
+  output$parcoords <- renderParcoords({
+    parcoords(v3()[,c(3,12,30,13,26,27)],
+      #final1dat[,c(3,4,2,10,13,14,27,28, 29,30,31,33)]
+              , rownames = F
+              , brushMode = "1d-axes"
+              , reorderable = T
+              , queue = F
+              , color = list(
+                colorBy ="Name"
+              )
+    )
+  }) 
+  
+  
   
   output$tablerank2 <- renderDataTable({
     data<-v3()
@@ -258,7 +276,7 @@ shinyServer(function(input, output){
     "})
   
   output$explain3<- renderText({"
-    (3) Select your budget. Note the default value is $55k in USD, which means this filter only displays schools with costs below this number.
+    (3) Select your budget.
     "})
   
   output$explain4<- renderText({"
@@ -389,3 +407,4 @@ shinyServer(function(input, output){
   })
 
 ######################### END SCRIPT ###############################
+
