@@ -207,7 +207,8 @@ shinyUI(dashboardPage(
                 h4("Earnings: Average earnings of the graduates"),
                 h4("CrimeRate: City crime data collected by FBI. (CrimeRate% = Number of total crime / 
                    Number of city population * 100%)"),
-                h4("HappyRank/HappyScore: Happiness Score and Rank, sort by the State which the school is in")
+                h4("HappyRank/HappyScore: Happiness Score and Rank, sort by the State which the school is in"),
+                h4("Slider: A feature design of slider matplot of a number of different parameters and their corresponding universities")
                 )),
       
       tabItem(tabName = "Intro",
