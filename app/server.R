@@ -1,5 +1,13 @@
 ######################### PACKAGES #############################
 
+user <- unname(Sys.info()["user"])
+if (user == "shiny") {
+  # Set library locations
+  .libPaths(c(
+    "C:/Users/eagle/OneDrive/Documents/R/win-library/3.4"
+  ))
+}
+
 # Load Package
 library(shiny)
 library(leaflet)
@@ -17,12 +25,19 @@ library(leaflet)
 library(shinydashboard)
 library(imager)
 library(shinythemes)
+library(lettercase)
 library(parcoords)
+# devtools::install_github("timelyportfolio/parcoords")
+# devtools::install_github("timelyportfolio/parcoords", force = TRUE)
+# library(parcoords, lib.loc = "C:/Users/eagle/OneDrive/Documents/R/win-library/3.4")
+# library(parcoords, lib.loc = "C:/Users/eagle/AppData/Local/Temp/RtmpwPuYTM/devtools2a9441aa786/timelyportfolio-parcoords-324d00b")
+# library(parcoords, lib.loc = "C:/PROGRA~1/R/R-34~1.3/bin/x64/R")
+# library(parcoords, lib.loc = "C:/Users/eagle/OneDrive/Documents/R/win-library/3.4")
 
 ########################### RUN APP ##############################
 
 # Set WD
-#setwd("/Users/timxie/Documents/GitHub/Fall2018-Project2-sec1proj2_grp8/app")
+#setwd("C:/Users/eagle/Desktop/Group 8 Project 2/Project/Project_2_Ivy_Difference/Project_2_Ivy_Difference")
 # Run App
 #runApp(getwd())
 
@@ -154,15 +169,11 @@ shinyServer(function(input, output){
   
   output$parcoords <- renderParcoords({
     parcoords(v3()[,c(3,12,30,13,26,27)],
-      #final1dat[,c(3,4,2,10,13,14,27,28, 29,30,31,33)]
-              , rownames = F
-              , brushMode = "1d-axes"
-              , reorderable = T
-              , queue = F
-              , color = list(
-                colorBy ="Name"
-              )
-    )
+              rownames = F, 
+              brushMode = "1d-axes", 
+              reorderable = T, 
+              queue = F, 
+              color = list(colorBy ="Name"))
   }) 
   
   

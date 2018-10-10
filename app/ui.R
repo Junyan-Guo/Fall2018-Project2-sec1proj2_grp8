@@ -1,5 +1,13 @@
 ######################### PACKAGES #############################
 
+user <- unname(Sys.info()["user"])
+if (user == "shiny") {
+  # Set library locations
+  .libPaths(c(
+    "C:/Users/eagle/OneDrive/Documents/R/win-library/3.4"
+  ))
+}
+
 # Load Package
 library(shiny)
 library(leaflet)
@@ -18,6 +26,8 @@ library(shinydashboard)
 library(imager)
 library(shinythemes)
 library(lettercase)
+library(parcoords)
+
 
 ########################### RUN APP ##############################
 
