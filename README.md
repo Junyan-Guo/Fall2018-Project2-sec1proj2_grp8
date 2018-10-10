@@ -1,6 +1,7 @@
 # Project 2: Shiny App Development Version 2.0
 
-### [Project Description](doc/project2_desc.md) This is the instruction of this project. We conduct the project according to the guidelines from this file. 
+### [Project Description](doc/project2_desc.md) 
+This is the instruction of this project. We conduct the project according to the guidelines from this file. 
 
 ![screenshot](doc/figs/Columbia_Background.jpg)
 
