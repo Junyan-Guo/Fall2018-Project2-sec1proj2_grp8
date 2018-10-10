@@ -47,7 +47,7 @@ Map: Every university that meet the user's requirments will show on the map. Aft
 
 Plots: There will be multiple interacitve density plots based on the filtered data. These will show Admission Rate, SAT Score, Average Cost, Earnings, Crime Rate, Happy Score, Happy Rank, and Enrollment of the selected (filtered) universities.
 
-![screenshot](doc/figs/screenshot2.PNG)
+![screenshot](doc/figs/screenshot4.PNG)
 
 + **Special Feature: Slider**: visualization from user input window of each parameter 
 
