@@ -36,7 +36,7 @@ This project explores and visualizes 272 universities in America by using the da
 
 + **Filter & Rank**: easily discover and compare the universities that meet user's requirements
 
-Two filter parts. One part is the basic filter: the user can choose universities based on "Major", "Type of School", "SAT Score", "Ivy League Universities", "East or West Coast", and "Type of City". The other part is the advanced filter: they can give their weights to "Academic Performance", "Average Cost", "Earning & Jobs", "Social Security" and "Life Quality", based on how important they think these factors matter to them. 
+Two filter parts. One part is the basic filter: the user can choose universities based on "Major", "Type of School", "SAT Score", "Ivy League Universities", "Location", and "Type of City". The other part is the advanced filter: they can give their weights to "Academic Performance", "Average Cost", "Earning & Jobs", "Social Security" and "Life Quality", based on how important they think these factors matter to them. 
 
 Two ranking options. One option is based on the Forbes University Rankings. The other one is using the weights the user gave to calculate the rank of these universities - ultimately producing a personalized ranking. 
 
@@ -50,7 +50,7 @@ Plots: There will be multiple interacitve density plots based on the filtered da
 
 + **Special Feature: Slider**: visualization from user input window of each parameter 
 
-Slider: The slider filter uses the data set that is already filtered from the parameters on the selection inputs on the left hand side and then generates a slider interactive matplot of the selected schools with each designated user inputs. The slider filter interactive matplot has SAT, ACT, AcgCost, Earnings, and CrimeRate. From what is selected on the left hand side (for example, Ivy League), the output for "Slider" will give 8 Ivy League universities and then output the data for these candidates. User can also select window, a range of data from each parameter according to user's own situation, and the left axis will output selected schools. 
+Slider: The slider filter uses the data set that is already filtered from the parameters on the selection inputs on the left hand side and then generates a slider interactive matplot of the selected schools with each designated user inputs. The slider filter interactive matplot has SAT, ACT, AvgCost, Earnings, and CrimeRate. From what is selected on the left hand side (for example, Ivy League), the output for "Slider" will give 8 Ivy League universities and then output the data for these candidates. User can also perform window selections, a range of data from each parameter according to user's own situation, and the left axis will output selected schools. 
 
 ![screenshot](doc/figs/screenshot3.PNG)
 
