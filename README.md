@@ -48,6 +48,12 @@ Plots: There will be multiple interacitve density plots based on the filtered da
 
 ![screenshot](doc/figs/screenshot2.PNG)
 
++ **Special Feature: Slider**: visualization from user input window of each parameter 
+
+Slider: The slider filter uses the data set that is already filtered from the parameters on the selection inputs on the left hand side and then generates a slider interactive matplot of the selected schools with each designated user inputs. The slider filter interactive matplot has SAT, ACT, AcgCost, Earnings, and CrimeRate. From what is selected on the left hand side (for example, Ivy League), the output for "Slider" will give 8 Ivy League universities and then output the data for these candidates. User can also select window, a range of data from each parameter according to user's own situation, and the left axis will output selected schools. 
+
+![screenshot](doc/figs/screenshot3.PNG)
+
 + **Contribution statement**: (Please also see [Contribution Statement](doc/contribution_statement.md)) 
 
 All team members contributed equally in all stages of this project. All team members approve our work presented in this GitHub repository including this contributions statement. 
