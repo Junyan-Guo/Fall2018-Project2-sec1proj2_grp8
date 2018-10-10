@@ -61,6 +61,13 @@ All team members contributed equally in all stages of this project. All team mem
 
 We also want to thank Professor Ying Liu and Professor Tian Zheng for hosting lectures of Advanced Data Science this semester. It is with transcending gratitude that we announce here what an inspiration both professors have been throughout our experience of building this shiny app. Their knowledge, understanding and genuine “care” for others is illuminated in everything they do! We, Group 8, are in forever debt for their teachings. Moreoever, we also want to thank TA, Chengliang Tang. There is not enough we can say about how much we thank heaven that he is our teaching assistance. His patience and understanding are unsurpassed. We are grateful for being his students.
 
++ **Reference**: 
+
+This project is built upon Uni-Mate, a shiny app project from previous semester. We also add extra data from CollegeScoreCard website as additional information.
+
+Uni-Mate Github: https://github.com/TZstatsADS/Spr2017-proj2-grp10
+College Score Card: https://collegescorecard.ed.gov/data/
+
 
 ```
 proj/
